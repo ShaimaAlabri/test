@@ -21,7 +21,7 @@ public class Patient implements Serializable {
 		Integer id=sc.nextInt();
 		
 	  try {
-		FileOutputStream fout = new FileOutputStream("C:\\Users\\Lenovo\\eclipse-workspace\\Atyab\\pat.txt");
+		FileOutputStream fout = new FileOutputStream("pat.txt");
 		ObjectOutputStream out =new ObjectOutputStream(fout);
 		
 		out.writeObject(patientName);
@@ -36,7 +36,7 @@ public class Patient implements Serializable {
 		}
 		
 		try {
-			ObjectInputStream in = new ObjectInputStream(new FileInputStream("C:\\Users\\Lenovo\\eclipse-workspace\\Atyab\\pat.txt"));
+			ObjectInputStream in = new ObjectInputStream(new FileInputStream("pat.txt"));
 			
 			in.readObject();
 			
